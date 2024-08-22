@@ -81,9 +81,10 @@ def loadjson (file ='__init__/data.dat'):#line:14
 
 pythonw.exe需要添加libs依赖才能正常运行，把文件夹下面的文件全部拷贝
 
-```java
+```
 C:\Users\Administrator\AppData\Local\Programs\Python\Python38\Lib
 ```
+其实也可以使用javaw，像上面也有红队使用相关的样本，但是环境依赖太大不推荐，举一反三其他语言同理
 
 ## 声明
 
