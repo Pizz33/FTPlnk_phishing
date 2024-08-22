@@ -1,4 +1,4 @@
-# 前言
+## 前言
 
 最近看到一些博客文章对红队样本做了一些分析，估计很快此方法便失效了，决定放出来供红队成员学习研究
 
@@ -12,12 +12,12 @@ https://www.freebuf.com/articles/web/325322.html
 
 但通过调用一些白程序(pythonw、javaw)仍可以绕过许多EDR杀软
 
-# 常规程序弊端
+## 常规程序弊端
 
 - 如果使用捆绑程序释放文档和木马，容易被EDR杀软会标记为恶意，如某数字杀软常会产生 `qvm 报毒拦截`
 - 红队木马被上传沙箱后，容易失效并且可能会导致大量的虚拟beacon上线，对攻击方造成影响
 
-# 使用方式
+## 使用方式
 
 特此感谢 [pant0m](https://github.com/pant0m)，本工具在其基础上进行二改
 
@@ -51,11 +51,11 @@ python.dll 内容为
 bye
 ```
 
-# 实现效果
+## 实现效果
 
 ![e58ad4a8c625481495a7137bee2837e](https://github.com/user-attachments/assets/f9b781b9-795f-4304-ad68-67ddac4ab393)
 
-# 代码加解密和混淆
+## 代码加解密和混淆
 
 shellcode处理可使用 https://github.com/EgeBalci/sgn
 
@@ -69,7 +69,7 @@ https://pyob.oxyry.com/
 
 ![image](https://github.com/user-attachments/assets/3ad71315-9824-49b5-8196-e75afee1668c) 
 
-# 坑点细节
+## 坑点细节
 
 因为文件调用是在上一级目录下，因此`加密shellcode路径`应设置为相对的 `__init__/data.dat`
 
@@ -85,7 +85,7 @@ pythonw.exe需要添加libs依赖才能正常运行，把文件夹下面的文�
 C:\Users\Administrator\AppData\Local\Programs\Python\Python38\Lib
 ```
 
-# 声明
+## 声明
 
 仅限用于技术研究和获得正式授权的攻防项目，请使用者遵守《中华人民共和国网络安全法》，切勿用于任何非法活动，若将工具做其他用途，由使用者承担全部法律及连带责任，作者及发布者不承担任何法律及连带责任！
 
