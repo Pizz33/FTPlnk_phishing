@@ -61,7 +61,9 @@ shellcode处理可使用 https://github.com/EgeBalci/sgn
 
 ![image](https://github.com/user-attachments/assets/6dcff7a3-42f4-4194-afb5-06015a474395)
 
-加载方式为了简便选择本地解密加载，但如果说为了更好的防溯源和被蓝队捕获shellcode可使用远程加载的方式，但需要注意存储桶的权限配置
+加载方式为了简便选择本地解密加载
+
+如果说为了更好的防溯源和被蓝队捕获shellcode可使用远程加载的方式，但需要注意存储桶的权限配置
 
 解密loader因为需要携带在附件内，所以需要尽可能混淆，增加蓝队的逆向难度
 
